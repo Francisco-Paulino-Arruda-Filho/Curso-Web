@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Posicionamentos(static, relative, absolute, fixed)</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            body{
+                background-color: #007fc7;
+            }
+            #container{
+                background-color: #FFF;
+                width: 800px;
+                margin: 10px auto;/*Primeiro encima e embaixo, segundo nas laterais*/
+                /*Auto centraliza*/
+                padding: 10px;
+            }
+            h1{
+                text-align: center;
+            }
+            p{
+                width: 300px;
+            }
+            .absolute{
+                position: absolute;
+                border-color: 1px;
+                border-style: solid;
+                border-color: red;
+                top: 80px;
+                right: 400px;
+            }
+            .relative{
+                border-radius: 1px;
+                border-color: red;
+                border-style: solid;
+                position: relative;
+                /*right, left, bottom, top*/
+                top: 20px;
+                left: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+           <h1>Posicionamentos</h1>
+           <p>
+                P1 Curabitur vel felis et lacus pharetra rutrum et non nunc. Mauris id nulla 
+                vitae mauris dapibus accumsan. 
+           </p>
+           <p class="relative">
+                P2 Curabitur vel felis et lacus pharetra rutrum et non nunc. Mauris id nulla 
+                vitae mauris dapibus accumsan. 
+           </p>
+           <p class="absolute">
+                P3 Curabitur vel felis et lacus pharetra rutrum et non nunc. Mauris id nulla 
+                vitae mauris dapibus accumsan. 
+           </p>
+        </div>
+    </body>
+</html>

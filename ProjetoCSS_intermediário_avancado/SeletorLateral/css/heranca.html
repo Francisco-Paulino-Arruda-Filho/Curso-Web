@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Herança e especificidade</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /*Border e background não são herdados*/
+            body{
+                color: red;
+                border: 1px solid blue;
+                background-color: wheat;
+            }
+            p{
+                color: green;
+            }
+            h1{
+                color: red;
+            }
+            h1.green{
+                color: green;
+            }
+            h1#yellow{
+                color: yellow;
+            }
+        </style>            
+    </head>
+    <body>
+        <div class="pagina">
+            <h1 class="green" id="yellow">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                <p>
+                    Vestibulum gravida dui vel massa consequat tincidunt. Cras finibus 
+                    bibendum est, eget condimentum nunc tristique a. In blandit sollicitudin 
+                    nisi ac consectetur.
+                </p>
+                <p>
+                    Etiam id fermentum quam. Maecenas aliquet ex eu fermentum pretium. Donec 
+                    ut enim et leo tincidunt hendrerit in et leo. Duis fermentum diam id felis 
+                    pharetra vehicula. Praesent pharetra rhoncus augue, at lacinia lacus rutrum 
+                    ac. Mauris elementum vel quam in blandit.
+                </p>
+                <p>
+                    Quisque semper tincidunt rhoncus. Fusce scelerisque eros quis leo porttitor, 
+                    quis pellentesque mi molestie. Proin a consectetur mauris. In sit amet libero 
+                    erat. Praesent ut purus vitae sem blandit bibendum a sed arcu.
+                </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sobrepondo elementos</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            .conteudo1{
+                background-color: orange;
+                border-radius: 1px;
+                border-color: red;
+                border-style: solid;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                z-index: 2;
+            }
+            .conteudo2{
+                background-color: green;
+                border-radius: 1px;
+                border-color: red;
+                border-style: solid;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                top: 80px;
+                left: 80px;
+                z-index: 1;
+            }
+            .conteudo3{
+                background-color: blue;
+                border-radius: 1px;
+                border-color: red;
+                border-style: solid;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                top: 120px;
+                left: 120px;
+                z-index: 0;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="conteudo1">
+            Conteudo 1
+       </div>
+       <div class="conteudo2">
+            Conteudo 2
+       </div>
+       <div class="conteudo3">
+            Conteudo 3
+        </div>
+    </body>
+</html>

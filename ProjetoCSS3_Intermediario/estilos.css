@@ -1,0 +1,111 @@
+/*.conteudo{
+    border: 1px solid red;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 150px;
+    background-color: blue;
+}
+.conteudo2{
+    margin: 50px;
+    width: 150px;
+    border: 1px solid red;
+    background-color: blueviolet;
+}
+.noticia{
+    background-color: blue;
+    padding: 10px;
+}
+h2{
+    border: 20px solid black;
+    margin: 10px;
+}*/
+/*.conteudo1{
+    background-color: blue;
+    border-radius: 1px;
+    border-color: gray;
+    border-style: solid;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+.conteudo2{
+    background-color: red;
+    border-radius: 1px;
+    border-color: gray;
+    border-style: solid;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.conteudo3{
+    background-color: green;
+    border-radius: 1px;
+    border-color: gray;
+    border-style: solid;
+    width: 200px;
+    height: 200px;
+    float: right;
+}*/
+/*#principal{
+    border: 10px solid red;
+    background-color: green;
+    width: 60%;
+}
+.conteudo{
+    background: blue;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: right;
+}
+/*.conteudo-zero{
+    background: red;
+    border: 1px solid gray;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+}
+.clear{
+    clear: both;
+}*/
+/*Elementos flutuantes na prática
+body{
+    background-color: #f4f4f4;
+}
+#principal{
+    width: 920px;
+}
+.noticia{
+    background-color: #e5e5e5;
+    padding: 5px;
+    width: 280px;
+    margin: 7px;
+    float: left;
+}
+.galeria{
+    background-color: white;
+    width: 265px;
+    padding: 5px;
+    border: 3px;
+    margin: 15px;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}*/
+.borda{
+    border-color: red;
+    border-style: solid;
+    border-radius: 1px;
+    display: inline;
+}

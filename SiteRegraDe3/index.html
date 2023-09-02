@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Regra de 3</title>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <meta charset="utf-8">
+        <script>
+            function calcular(){
+                var aux1 = parseFloat(document.getElementById('valores1').value)
+                var aux2 = parseFloat(document.getElementById('valores2').value)
+                var aux3 = parseFloat(document.getElementById('porcentagens1').value)
+                var resultado = aux2 * aux3 / aux1;
+                document.getElementById('porcentagens2').value = resultado
+            }
+        </script>
+        <!--[if lt IE 9]>
+	        <script src="js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body> 
+        <div id="principal">
+            <header>
+                <h1>Incrível regra 3</h1>
+            </header>
+            <div id="caixa">
+                <div id="valores">
+                    <input type="text" id="valores1" oninput="calcular()" class="entrada" placeholder="Valor 1"><br>
+                    <input type="text" id="valores2" oninput="calcular()" class="entrada" placeholder="Valor 2">
+                </div>
+                <div id="porcentagens">
+                    <input type="text" id="porcentagens1" oninput="calcular()" class="entrada" placeholder="Valor 3"><br>
+                    <input type="text" id="porcentagens2" disabled="disabled" class="entrada" placeholder="Resultado">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

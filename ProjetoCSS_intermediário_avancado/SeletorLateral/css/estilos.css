@@ -1,0 +1,91 @@
+/*Seletor universal, seleciona toda a página
+*{
+    border: 0;
+    padding: 0;
+}
+Seleciona todos os títulos h1
+h1{
+    color: red;
+    background-color: black;
+}
+Seletor o id com esse nome
+#cabecalho{
+    background-color: gray;
+}
+Seletor universal o span com essa class
+span.teste{
+    color: orange;
+}
+Seletor de todo o parágrafo com a classe depois do vento
+p.teste{
+    color: steelblue;
+}
+Seletor filhos, seleciona o descendente direto
+li>a{
+    text-decoration: none;
+}
+Seleciona o descendentes diretos e indiretos
+li a {
+    text-decoration: none;
+    color: green;
+}
+/*Seletor irmão adjacente seleciona o primeiro elemento do tipo após o sinal
+que aparece depois do primeiro elemento antes do sinal
+h1+p{
+    border: 2px solid red;
+}
+/*x~y, Selecina todos os y depois de x
+h1~p{
+    background-color: pink;
+}
+body{
+    color: red;
+    border: 1px solid blue;
+    background-color: wheat;
+}
+p{
+    color: green;
+}
+h1{
+    color: red;
+}
+h1.green{
+    color: green;
+}
+h1#yellow{
+    color: yellow;
+}
+*/
+/*Barra de navegação vertical
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    padding: 10px 20px;
+    background: url('../imagens/seta.png') no-repeat left center;
+}
+a{
+    text-decoration: none;
+}*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul a{
+    width: 200px;
+    height: 40px;
+    display: block;
+    background: #f7b600 url('../imagens/menu.png') no-repeat left bottom;
+    text-decoration: none;
+    color: black;
+    text-indent: 40px;
+    line-height: 40px;
+}
+a:hover, .selecionado{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: white;
+}

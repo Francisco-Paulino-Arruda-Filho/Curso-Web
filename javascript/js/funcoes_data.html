@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <meta charset="utf-8">
+        <script>
+            var data = new Date()
+            document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+            document.write('<br>')
+            document.write(data.toString())
+            /*data.setDate(data.getDate() + 1)
+            document.write('<br>')
+            document.write(data.toString())
+            data.setMonth(data.getMonth() + 2)
+            document.write('<br>')
+            document.write(data.toString())
+            document.write('<br>')
+            data.setFullYear(data.getFullYear() + 3)
+            document.write('<br>')
+            document.write(data.toString())
+            document.write('<br>')
+            document.write(data.getTime())*/
+            var data1 = new Date(2023, 1, 4)
+            document.write('<br>')
+            document.write(data1.getTime() - data.getTime())
+            document.write('<br>')
+            //Valor em milisegundos
+            document.write(Math.abs(data1.getTime() - data.getTime()))
+            document.write('<br>')
+            //Conversao para segundos
+            var dias = Math.abs(data1.getTime() - data.getTime()) / 1000
+            document.write(dias)
+            document.write('<br>')
+            //Conversao para minutos
+            dias /= 60
+            document.write(dias)
+            document.write('<br>')
+            //Conversao para horas
+            dias /= 60
+            document.write(dias)
+            document.write('<br>')
+            //Conversao para dias
+            dias /= 24
+            document.write(dias)
+            document.write('<br>')
+        </script>
+        <!--[if lt IE 9]>
+	        <script src="js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+    </body>
+</html>

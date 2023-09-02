@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elementos flutuantes na prática</title>
+        <meta charset="utf-8">
+        <!--<link rel="stylesheet" type="text/css" href="estilos.css">-->>
+        <style type="text/css">
+            body{
+                background-color: #f4f4f4;
+            }
+            #principal{
+                width: 920px;
+            }
+            .noticia{
+                background-color: #e5e5e5;
+                padding: 5px;
+                width: 280px;
+                margin: 7px;
+                float: left;
+            }
+            .galeria{
+                background-color: white;
+                width: 265px;
+                padding: 5px;
+                border: 3px;
+                margin: 15px;
+                float: left;
+            }
+            a{
+                text-decoration: none;
+            }
+            .clear{
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="principal">
+            <div id="noticias">
+                    <div class="noticia">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>
+                            Curabitur vel felis et lacus pharetra rutrum et non nunc. Mauris id nulla 
+                            vitae mauris dapibus accumsan. 
+                        </p>
+                        <a href="">Veja mais</a>
+                    </div>
+                    <div class="noticia">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 2</h2>
+                        <p>
+                            Curabitur vel felis et lacus pharetra rutrum et non nunc. Mauris id nulla 
+                            vitae mauris dapibus accumsan. 
+                        </p>
+                        <a href="">Veja mais</a>
+                    </div>
+                    <div class="noticia">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 3</h2>
+                        <p>
+                            Curabitur vel felis et lacus pharetra rutrum et non nunc. Mauris id nulla 
+                            vitae mauris dapibus accumsan.
+                        </p>
+                        <a href="">Veja mais</a>
+                    </div>
+            </div>
+            <div class="clear"></div>
+            <div>
+                <div class="galeria">
+                    <img src="imagens/imagem1.png">
+                    <p>Resumo</p>
+                </div>
+                <div class="galeria">
+                    <img src="imagens/imagem2.png">
+                    <p>Resumo</p>
+                </div>
+                <div class="galeria">
+                    <img src="imagens/imagem3.png">
+                    <p>Resumo</p>
+                </div>
+                <div class="galeria">
+                    <img src="imagens/imagem4.png">
+                    <p>Resumo</p>
+                </div>
+                <div class="galeria">
+                    <img src="imagens/imagem5.png">
+                    <p>Resumo</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

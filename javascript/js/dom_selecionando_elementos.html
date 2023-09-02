@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <meta charset="utf-8">
+        <!--[if lt IE 9]>
+	        <script src="js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
+        <script>
+            //Retorna um elemento único
+            console.log(document.getElementById('nome_usuario'))
+            //Retorna uma coleção
+            console.log(document.getElementsByTagName('input'))
+            //Retorna uma colação
+            console.log(document.getElementsByClassName('campo_texto'))
+            //Retorna um NodeLlist
+            console.log(document.getElementsByName('nome'))
+        </script>
+    </body>
+</html>

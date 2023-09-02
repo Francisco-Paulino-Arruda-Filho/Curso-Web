@@ -1,0 +1,24 @@
+header{
+    border: 1px solid red;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+nav{
+    border: 1px solid blue;
+    padding: 10px;
+}
+article{
+    border: 1px solid red;
+    background-color: orange;
+}
+section{
+    border: 1px dotted #fff;
+    padding: 10px;
+}
+aside{
+    background-color: blue;
+}
+footer{
+    border: 1px solid red;
+    background-color: #ccc;
+}

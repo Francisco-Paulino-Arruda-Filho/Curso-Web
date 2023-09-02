@@ -1,0 +1,50 @@
+body{
+    background-image: url('Imagens/fundo.png');
+    background-size: 100%;
+    background-color: #d2d2c1;
+    background-attachment: scroll;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: #4b566a;
+    background-color: #d2d2c1;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+.opcoes{
+    background-color: #d2d2c1;
+}
+.Descricao{
+    background-color: #e8e8d9;
+    padding: 10px;
+}
+.titulos{
+    color: #828271;
+    font-size: 1.2em;
+}
+.direitos{
+    color: black;
+    text-align: center;
+}
+.principal{
+    width: 900px;
+    background-color: #d2d2c1;
+}
+figure.imagens{
+    background-repeat: no-repeat;
+}
+.campanhas{
+    border-radius: 20px;
+    border-color: #828271;
+    border-style: solid;
+}
+#topo{
+    background-image: url('Imagens/capa.png');
+    background-repeat: no-repeat;
+}
+.menu{
+    background-color: #c5c5b2;
+}

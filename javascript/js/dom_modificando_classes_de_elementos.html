@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <style>
+            .estilo1{
+                color: white;
+                background-color: red;
+            }
+            .estilo2{
+                background-color: black;
+                color: white;
+                width: 150px;
+                height: 150px;
+            }
+        </style>
+        <script>
+            function modificarClasse(){
+                document.getElementById('mensagem').className = 'estilo2'
+            }
+        </script>
+        <!--[if lt IE 9]>
+	        <script src="js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div id="mensagem" class="estilo1">Modificando classes do elemento</div>
+        <hr>
+        <button type="button" onclick="modificarClasse()">Aplicar classe</button>
+    </body>
+</html>

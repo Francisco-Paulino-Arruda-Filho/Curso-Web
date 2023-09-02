@@ -1,0 +1,11 @@
+#imagem{
+    background-image: url('Imagens/amazon-logo-editorial-free-vector.jpg');
+}
+.fundo{
+    background-color: orange;
+    color: red;
+}
+.texto{
+    background-color: black;
+    color: wheat;
+}

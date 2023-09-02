@@ -1,0 +1,14 @@
+.caixa1{
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-image: url('../imagens/camera.png');
+    /*-webkit-border-radius: 20px 90px;
+    -moz-border-radius: 20px 90px;
+    border-radius: 20px 90px;*/
+    background: linear-gradient(to right, red, blue, yellow);
+}
+.caixa1 h1{
+    background-color: rgba(255, 255, 255, 0.5);
+}

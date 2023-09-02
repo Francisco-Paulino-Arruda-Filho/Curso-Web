@@ -1,0 +1,45 @@
+body{
+    background-image: url('../imagens/matematica1.jpg');
+}
+#principal{
+   width: 70%;
+   height: 50%;
+   background-position-y: center;
+   background-position-x: right;
+   border: 1px solid red;
+   height: 960px;
+   position: absolute;
+   right: 15%;
+   background-color: steelblue;
+}
+#caixa{
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 50px;
+    padding: 20px 30px;
+}
+.entrada{
+    padding: 10px;
+    display: block;
+}
+header{
+    background-image: url('../imagens/matematica2.jpg');
+    height: 300px;
+    margin-top: 0;
+}
+header h1{
+    background-color: black;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+}
+#valores{
+    float: left;
+    border: 1px solid red;
+    padding: 10px 20px 20px 10px;
+}
+#porcentagens{
+    float: right;
+    border: 1px solid red;
+    padding: 10px 20px 20px 10px;
+}

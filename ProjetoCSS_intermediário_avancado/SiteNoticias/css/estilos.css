@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('../imagens/fundo.png');
+    background-repeat: repeat-x;
+    background-color: white;
+}
+#principal{
+    width: 750px;
+    margin: 0 auto;
+}
+#topo{
+    height: 150px;
+    /*border: 1px solid red;*/
+    background-image: url('../imagens/detalhe-topo.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+}
+.logo{
+    width: 152px;
+    height: 66px;
+    background-image: url('../imagens/logo.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#topo ul{
+    background-color: #b10333;
+    margin-top: 30px;
+    float: left;
+}
+#topo ul li{
+    float: left;
+}
+#topo ul a{
+    text-decoration: none;
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    color: white;
+    background-image: url('../imagens/divisor.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+}
+#topo ul .primeiro{
+    background-image: none;
+}
+#topo ul a:hover{
+    color: #69001d;
+}
+body.home #navegacao a#home, body.brasil #navegacao a#brasil, 
+body.ciencia #navegacao a#ciencia, body.economia #navegacao a#economia,
+body.fotos #navegacao a#fotos, body.internacional #navegacao a#internacional,
+body.saude #navegacao a#saude{
+    cursor: text;
+    color: white;
+    background-color: #de003e;
+}
+#conteudo{
+    background-color: #f5f5f5;
+    margin-top: 80px;
+}
+#primario{
+    width: 270px;
+    float: left;
+    margin:  0 0 20px 195px;
+}
+#duas-colunas #primario{
+    width: 555px;
+    /*background-color: blue;
+    float: left;
+    margin:  0 0 20px 195px;*/
+}
+#uma-coluna #primario{
+    width: 720px;
+    float: left;
+    margin:  0 0 20px 0;
+}
+#secundario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+#lateral{
+    width: 180px;
+    margin: 0 0 20px -750px;
+    float: left;
+}
+.caixa{
+    background-color: #f3f3f3;
+    margin: 10px 0;
+    padding: 5px 0 5px 0;
+    background-image: url('../imagens/fundo-caixa.png');
+}
+.caixa h2{
+    background-color: #294c71;
+    color: white;
+    font-size: 1em;
+}
+.caixa-conteudo{
+    background-color: white;
+    padding: 5px;
+    margin-top: 5px;
+}
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+#lateral ul a:hover{
+    color: #a1a1a1;
+    background-color: #f9f9f9;
+    background-image: url('../imagens/marcador.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    padding-left: 20px;
+}
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: white;
+}
+input.submit{
+    width: 80px;
+    color: white;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+img.imagem-principal{
+    border: 3px solid #dfdfdf;
+    width: 98%;
+}
+#ultima-noticia h3{
+    text-transform: uppercase;
+    display: inline;
+    padding: 3px;
+    font-size: 0.8em;
+    background-color: #de003e;
+}
+#destaque h3{
+    color: white;
+    text-transform: uppercase;
+    display: inline;
+    padding: 3px;
+    font-size: 0.8em;
+    background-color: #b10333;
+}
+.caixa-conteudo a{
+    color: #b10333;
+}
+.lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+}
+.lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+.lista-noticias li a{
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #294c71;
+}
+.lista-noticias li p{
+    color: black;
+}
+#container-rodape{
+    background-color: #294c71;
+    padding: 20px;
+}
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: white;
+}
+/*body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #c4c4c4;
+}
+#principal{
+    width: 90%;
+    margin: 0px auto;
+}
+#cabecalho{
+    background-color: rgb(6, 73, 128);
+    height: 280px;
+    width: 100%;
+}
+#logo{
+    float: left;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+#seletor{
+    background-color: red;
+    position: relative;
+    left: 250px;
+    top: 200px;
+}
+#detalhe{
+    float: right;
+    right: 100px;
+}
+#cidade img{
+    background-repeat: repeat-x;
+    width: 12%;
+    padding: 1.26px;
+}
+#seletor{
+    background-color: white;
+}
+#seletor ul{
+    list-style: none;
+}
+#seletor li{
+    float: left;
+    padding: 20px;
+    background-image: url('../imagens/.png');
+    background-color: red;
+    text-decoration: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+#conteudo{
+    float: left;
+}
+#caixa{
+    width: 100%;
+    margin: 5px auto;
+    background-color: #c4c4c4;
+}
+#conteudo{
+    float: left;
+    padding: 100px auto;
+}
+#entrevistas{
+    float: left;
+    background-color: white;
+    width: 20%;
+}
+#entrevistas h2{
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+    line-height: 100%;
+}
+#entrevistas ul{
+    list-style-type: none;
+    color: steelblue;
+    margin: 10px;
+}
+#entrevistas a{
+    color: steelblue;
+}
+#ultimo{
+    background-color: white;
+    width: 30%;
+    float: right;
+    position: relative;
+    right: 600px;
+}
+#ultimo p{
+    margin: 5px auto;
+}
+#ultimo h2{
+    background-color: steelblue;
+    text-align: center;
+    color: white;
+}
+p.titulo{
+    background-color: red;
+    color: black;
+}
+.imagem{
+    width: 90%;
+    overflow: hidden;
+    margin: 15px;
+}
+#destaque{
+    background-color: white;
+    width: 30%;
+    float: right;
+    position: relative;
+    left: 300px;
+}
+#destaque h2{
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+}
+#destaque p{
+    padding: 15px;
+}
+.lerMais{
+    color: red;
+    padding: 15px;
+}*/

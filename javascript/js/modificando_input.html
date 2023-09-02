@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <style>
+            .estilo_foco{
+                background-color: yellow;
+            }
+            .estilo_erro{
+                background-color: red;
+            }
+            .estilo_sucesso{
+                background-color: green;
+            }
+        </style>
+        <script>
+            function modificarClasse(){
+                document.getElementById('entrada').className = 'estilo_foco'
+            }
+            function mudarFoco(){
+                if(document.getElementById('entrada').value.length >= 3){
+                    document.getElementById('entrada').className = 'estilo_sucesso'
+                }else{
+                    document.getElementById('entrada').className = 'estilo_erro'
+                }
+            }
+        </script>
+        <!--[if lt IE 9]>
+	        <script src="js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--<div id="mensagem" class="estilo1">Modificando classes do elemento</div>
+        <hr>
+        <button type="button" onclick="modificarClasse()">Aplicar classe</button>-->
+        <input type="text" onfocus="modificarClasse()" onblur="mudarFoco()" id="entrada">
+        <button id="botao">Submeter</button>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 720px;
+    background-color: #159cb0;
+    background-image: url('../imagens/fundo-horizontal.png') repeat-x;
+    float: left;
+}
+ul li{
+    float: left;
+}
+ul a{
+    display: block;
+    color: white;
+    padding: 0 2em;
+    text-decoration: none;
+    line-height: 2em;
+    background-image: url('../imagens/divisor.png') repeat-y;
+}
+a:hover, .selecionado{
+    background-color: cornflowerblue;
+}
+ul #primeiro a{
+    background: none;
+}

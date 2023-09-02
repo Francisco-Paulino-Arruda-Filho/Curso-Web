@@ -1,0 +1,58 @@
+body{
+    background-color: #f2f2f2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#container{
+    color:white;
+    margin: 0 auto;
+    width: 720px;
+    color: black;
+}
+#marca{
+    height: 100px;
+    background-color: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+#conteudo{
+    width: 520px;
+    float: right;
+}
+#conteudo-principal{
+    width: 250px;
+    float: left;
+}
+#conteudo-secundario{
+    width: 250px;
+    float: right;
+    background-color: #d1d1d1;
+    padding-left: 15px;
+}
+#navegacao{
+    width: 180px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #d1d1d1;
+}
+#navegacao li{
+    position: relative;
+    right: 20px;
+}
+#rodape{
+    clear: both;
+    background-color: #c4c4c4;
+    padding: 5px;
+    text-align: center;
+}
+ul>li{
+    list-style-type: none;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-color: black;
+    color:white;
+}
