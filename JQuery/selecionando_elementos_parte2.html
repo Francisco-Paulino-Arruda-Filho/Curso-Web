@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <title>Selecionando elementos parte 2</title>
+    </head>
+    <body>
+        <input type="text" placeholder="Campo 1" class="exemplo">
+        <input type="text" placeholder="Campo 2" class="exemplo">
+        <input type="text" placeholder="Campo 3" class="exemplo">
+
+        <div class="diversos">Divisão 1</div>
+        <div class="diversos">Divisão 2</div>
+        <div class="diversos">Divisão 3</div>
+
+        <ul class="listas diversos">
+            <li>Menu 2 - Item 1</li>
+            <li>Menu 2 - Item 2</li>
+            <li>Menu 2 - Item 3</li>
+        </ul>
+
+        <ul class="lista2">
+            <li class="exemplo">Menu 2 - Item 1</li>
+            <li class="exemplo">Menu 2 - Item 2</li>
+            <li class="exemplo">Menu 2 - Item 3</li>
+        </ul>
+    </body>
+    <script>
+        //Combinação de seletores
+        //Selecionar elementos por classe de ta específica
+        console.log($('div.diversos'))
+        //Selecionar elementos por classe da classe específica
+        console.log($('.exemplo'))
+        //Elementos exemplo dentro de uma lista2
+        console.log($('.lista2 .exemplo'))
+        //Instruções especiais
+        console.log($('.exemplo:first'))
+        console.log($('.exemplo:last'))
+        console.log($('.exemplo:even'))
+        console.log($('.exemplo:odd'))
+    </script>
+</html>

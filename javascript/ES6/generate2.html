@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Generators 2</title>
+    </head>
+    <script>
+        function* conversar(){
+            //Opção está no escopo
+            let opcao
+            opcao = yield 'E aí, tudo bem?'
+            console.log(opcao)
+            //O parâmetro enviado no next
+            if(opcao == 'sim'){
+                yield 'Ótimo, fico feliz!'
+                opcao = yield 'Como posso ajudar? Quer uma piada para começar?'
+                if(opcao == 'sim') {
+
+                } else {
+                    yield 'Digite 1 para compras, 2 para venda ou 3 para falar com a atendente'
+                }
+
+            } else {
+                yield 'Fico triste por isso'
+                yield 'Digite 1 para compras, 2 para venda ou 3 para falar com a atendente'
+            }
+            /*yield 'Terceira etapa: !' + opcao
+            yield 'Quarta etapa: !' + opcao
+            yield 'Quinta etapa: !' + opcao*/
+        }
+
+        let conversa = conversar() //Objeto iterator
+
+        function acao(){
+            let resposta = document.getElementById('resposta').value
+
+            let iteracao = conversa.next(resposta)
+            console.log(iteracao)
+            /*iteracao = conversa.next('Sim')
+            console.log(iteracao)*/
+            
+        }
+    </script>
+    <body>
+        <div id="teste">
+            <button type="button" onclick="acao()">Clique aqui</button>
+            Resposta: <input type="text" id="resposta">
+        </div>
+    </body>
+</html>

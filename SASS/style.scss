@@ -1,0 +1,44 @@
+$cor: blue;
+$fundo: red;
+h1 {
+    color: $cor;
+    font-size: 14px;
+}
+h2 {
+    color: $fundo;
+    font-size: 10px;
+}
+
+/*# sourceMappingURL=style.scss.map */
+@function corAleatoria() {
+    $red: random(255);
+      $green: random(255);
+      $blue: random(255);
+      @return rgb($red, $green, $blue);
+}
+.alerta {
+    background-color: lighten(orange, 10%);
+    /*
+        darken(orange, 10%);
+        mix(orange, 10%);
+    */
+}
+@mixin padrao {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+@for $i from 1 through 3 {
+    .item#{$i} {
+        background-color: corAleatoria();
+        color: white;
+        margin-bottom: 2px;
+        @include padrao;
+    }
+}
+.vermelho {
+    color: red;
+}
+.fundo {
+    @extend .vermelho;
+    background-color: black;
+}

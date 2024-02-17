@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ObjectFromEntries</title>
+    </head>
+    <body>
+        <script>
+            let dados = [['nome', 'Paulino'],
+                            ['profissional', ['profissao', 'programador']],
+                            ['hobbies', ['Estudar', 'Dormir']],
+                            ['pais', 'Brasil']
+                        ]
+            console.log(dados)
+            let obj = Object.fromEntries(dados)
+            console.log(obj)
+        </script>
+    </body>
+</html>

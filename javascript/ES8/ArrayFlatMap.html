@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objetos get own property</title>
+    </head>
+    <body>
+        <script>
+            let arr = [
+                'Paulino Higor',
+                'Paulo Elpidio',
+                'João Renan'
+            ]
+            let nomesMap = arr.map(item => {
+                return item.split(',')
+            })
+            let nomesFlatMap = arr.flatMap(item => {
+                return item.split(',')
+            })
+            console.log(nomesMap)
+            console.log(nomesFlatMap)
+        </script>
+    </body>
+</html>

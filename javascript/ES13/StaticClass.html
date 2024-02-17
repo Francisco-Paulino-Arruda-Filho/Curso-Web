@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Classe com bloco de código estático</title>
+    </head>
+    <body>
+        <script>
+          class Agenda {
+            #titulo = ''
+            eventos = []
+
+            static config = []
+            static #eventosRecorrentes = []
+            constructor(titulo, eventos) {
+                this.#titulo = titulo
+                this.eventos = eventos
+            }
+            static {
+                console.log('Executando bloco estático de código')
+            }
+            static {
+                this.config = {
+                    tema: 'dark',
+                    visualizacao: 'mensal'
+                }
+            }
+            static {
+                this.#eventosRecorrentes.push('Feriado 1')
+                this.#eventosRecorrentes.push('Feriado 2')
+            }
+            static getEventosRecorrentes() {
+                this.#eventosRecorrentes
+            }
+          }
+          const agenda = new Agenda('Cliente 1', ['Reunião 1', 'Reunião 2'])
+          console.log(agenda.config)
+        </script>
+    </body>
+</html>

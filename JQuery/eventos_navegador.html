@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <title>Eventos do navegador</title>
+        <style>
+            #divExterna {
+                background-color: aqua;
+                width: 80px;
+                height: 80px;
+            }
+            #divInterna {
+                background-color: blueviolet;
+                width: 40px;
+                height: 40px;
+            }
+            .inputFocado {
+                background-color: yellow;
+            }
+        </style>
+        <script>
+            $(document).ready( () => {
+                $('#onload').html('Página carregada')
+
+                $(window).scroll( () => {
+                    $('#scroll').html('Scroll usado')
+                })
+
+                $(window).resize( () => {
+                    $('#window').html('Página redimencionada')
+                })
+
+                //Function / arrow function
+                $('#div1').scroll(function () {
+                    $this.css('background-color', 'blue')
+                })
+
+                $('#btn1').mousedown( () => {
+                    $('#div2').css('background-color', 'green')
+                })
+
+                $('#btn1').mouseup( () => {
+                    $('#div2').css('background-color', 'blue')
+                })
+
+                $('#btn2').dblclick( () => {
+                    $('#div2').css('background-color', 'black')
+                })
+
+                $('#div2').mousemove((e) => {
+                    $('#resultadoDiv').html('X:' + e.offsetX + '/Y:' + e.offsetY)
+                })
+
+                //Mais antigos
+
+                $('#divExterna').mouseover( () => {
+                    $('#resultadoDiv1').html('Entrou')
+                })
+
+                $('#divExterna').mouseout( () => {
+                    $('#resultadoDiv1').html('Saiu')
+                })
+
+                //Mais novos
+
+                $('#divInterna').mouseenter( () => {
+                    $('#resultadoDiv2').html('Entrou mais interno')
+                })
+
+                $('#divInterna').mouseleave( () => {
+                    $('#resultadoDiv2').html('Saiu do mais interno')
+                })
+
+                $('#input1').keydown( () => {
+                    $('#resultadoTeclado').html('Tecla precionada')
+                    console.log('Tecla precionada')
+                })
+
+                $('#input1').keyup( (e) => {
+                    $('#resultadoTeclado').html('Tecla levantada')
+                    console.log(e.keyCode)
+                })
+
+                $('#input1').keypress( () => {
+                    $('#resultadoTeclado').html('Tecla apertada')
+                })
+
+                $('#nome').focus(() => {
+                    console.log('Esse elemento recebeu foco')
+                    $('#nome').addClass('inputFocado')
+                })
+
+                $('#nome').blur(() => {
+                    console.log('Perdeu o foco')
+                })
+
+                $('#opcao').change(() => {
+                    console.log('Mudou o foco')
+                })
+
+                $('form').submit((e) => {
+                    e.preventDefault()
+                    console.log('Formulário submetido')
+                })
+
+                $('#botao').click(() => {
+                    console.log('Botão clicado')
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div id="topo">
+            <h1>Eventos</h1>
+        </div>
+        <div>
+            <h3>Browser</h3>
+            <span>Onload: </span><span id="onload">?</span>
+            <br>
+            <span>Scroll: </span><span id="scroll">?</span>
+            <br>
+            <span>Window: </span><span id="window">?</span>
+            <hr>
+            <div id="div1" style="height: 100px; width: 100px; border: 1px solid red; overflow-y: scroll;">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+        <hr>
+
+        <h3>Mouse</h3>
+        <button type="button" id="btn1">Clique aqui</button>
+        <button type="button" id="btn2">Clique aqui 2x</button>
+        <div id="div2" style="background-color: red; width: 80px; height: 80px;">
+            
+        </div>
+        <span id="resultadoDiv">Resultado do evento sobre div</span>
+        <hr>
+
+        <div id="divExterna">
+            <div id="divInterna"></div>
+        </div>
+        <span>Div Externa: </span><span id="resultadoDiv1"></span>
+        <span>Div Externa: </span><span id="resultadoDiv2"></span>
+        <hr>
+
+        <h3>Teclado</h3>
+        <span>Nome:</span>
+        <input type="text" id="input1">
+        <span id="resultadoTeclado">Resultado do evento sobre input</span>
+        <hr>
+
+        <h3>Formulário</h3>
+        <form id="form">
+            <span>Nome:</span>
+            <input type="text" id="nome">
+
+            <span>Email:</span>
+            <input type="text" id="email">
+
+            <span>Motivo do contato:</span>
+            <select id="opcao">
+                <option value="">-- Selecione --</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+            </select>
+            <button type="button" id="botao">Enviar</button>
+        </form>
+    </body>
+    <script>
+        //$('.menu').closest('#topo'), encontra um pai com esse nome(#topo)
+        //$('.menu').parent(), retorna o pai
+        //$('#topo').find('.menu'), encontra filhos com esse nome
+    </script>
+</html>

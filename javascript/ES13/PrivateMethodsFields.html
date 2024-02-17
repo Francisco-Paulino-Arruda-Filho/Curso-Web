@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Private methods fields e hasOwn</title>
+    </head>
+    <body>
+        <script>
+          class Funcionario {
+            constructor(departamento, salario, primeiroNome, ultimoNome) {
+                this.departamento = departamento
+                this.salario = salario
+                this._primeiroNome = primeiroNome
+                this.ultimoNome = ultimoNome
+            }
+            _nomeCompleto() {
+                return `${primeiroNome} ${ultimoNome}`
+            }
+          }
+          let funcionario = new Funcionario('Programação', 10000, 'Francisco', 'Paulino')
+          //Usado para hierárquia e ver se o objeto possui aquele atributo
+
+          
+          console.log(Object.hasOwn(funcionario, 'ultimoNome'))
+        </script>
+    </body>
+</html>

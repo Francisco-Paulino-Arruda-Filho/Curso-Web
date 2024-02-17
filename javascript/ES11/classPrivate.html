@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Private</title>
+    </head>
+    <body>
+        <button id="btnSaudacao">Saudação</button>
+        <hr>
+        <input type="text" id="cep" placeholder="CEP">
+        <button id="btnCEP">Consultar CEP</button>
+    </body>
+
+    <script type="module">
+        class Pessoa {
+            #humor = null
+            #mensagens = [
+                'Seja feliz',
+                'Não estou para conversa hoje'
+            ]
+            constructor(nome) {
+                this.#mudarHumor()
+                this.nome = nome
+            }
+            getHumor() {
+                return this.#humor
+            }
+            #mudarHumor() {
+                this.#humor = Math.floor(Math.random() * 2)
+            }
+            dizerOi(){
+                return 'Olá, meu nome é ' + this.nome
+            }
+            getMensagens(){
+                return this.#mensagens[this.#humor]
+            }
+        }
+        let p = new Pessoa('José')
+        console.log(p.getHumor())
+        console.log(p.getMensagens())
+    </script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo removendo elementos</title>
+
+    <script>
+        //Append insere depois, prepend antes
+        $(document).ready( () => {
+            $('#lista1').prepend('<li>Item 0</li>')
+            $('#lista2').append('<div>Item 4</div>')
+            //After é depois do elemento e before é antes
+            $('#lista1').before('<h1>Olá, estou bem</h1>')
+            $('#lista2').after('<h1>Adeus até mais</h1>')
+            //Remove tira um elemento e html troca tudo
+            $('#lista1').html('<h1>Trocando tudo</h1>')
+            $('#lista2').remove()
+        })
+    </script>
+</head>
+<body>
+    <ul id="lista1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <div id="lista2">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <hr>
+</body>
+</html>

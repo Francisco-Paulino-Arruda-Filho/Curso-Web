@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nullish coalescing operator</title>
+    </head>
+    <body>
+        <script>
+            //Valores não utilizáveis
+          let teste1 = null || 'Valor a direita'
+          let teste2 = 0 || 'Valor a direita'
+          let teste3 = undefined || 'Valor a direita'
+          let teste4 = '' || 'Valor a direita'
+          let teste5 = 'Valor a esquerda' || 'Valor a direita'
+          console.log(teste1)
+          console.log(teste2)
+          console.log(teste3)
+          console.log(teste4)
+          console.log(teste5)
+
+          //Preferência a esquerda
+          console.log('-------------')
+          teste1 = null ?? 'Valor a direita'
+          teste2 = 0 ?? 'Valor a direita'
+          teste3 = undefined ?? 'Valor a direita'
+          teste4 = '' ?? 'Valor a direita'
+          teste5 = 'Valor a esquerda' ?? 'Valor a direita'
+          console.log(teste1)
+          console.log(teste2)
+          console.log(teste3)
+          console.log(teste4)
+          console.log(teste5)
+        </script>
+    </body>
+</html>

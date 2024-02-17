@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objetos values</title>
+    </head>
+    <body>
+        <script>
+            let objeto = {
+                nome: 'Paulino',
+                profissional: {
+                    area: 'TI',
+                    profissao: 'Programador'
+                },
+                hobbies: [
+                    { id: 1, hobby: 'Estudar'},
+                    { id: 2, hobby: 'Fofocar'}
+                ],
+                pais: 'Brasil'
+            }
+            console.log(objeto)
+            //Converte para um array enumerado
+            console.log('Olá ' + Object.values(objeto))
+            //Cada índice é um array
+            console.log(Object.entries(objeto))
+        </script>
+    </body>
+</html>

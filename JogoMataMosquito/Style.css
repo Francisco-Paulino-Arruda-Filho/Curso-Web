@@ -1,0 +1,59 @@
+body {
+    background-image: url(imagens/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#menuInicial {
+    background-image:url(imagens/game.png);
+}
+.mosquito1 {
+    width: 50px;
+    height: 50px;
+}
+.mosquito2 {
+    width: 80px;
+    height: 80px;
+}
+.mosquito3 {
+    width: 100px;
+    height: 100px;
+}
+.ladoDireito {
+    transform: scaleX(-1);
+}
+.ladoEsquerdo {
+    transform: scaleX(1);
+}
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    bottom: 0px;
+    border-top: 1px white;
+    background-color: white;
+    opacity: 0.7;
+}
+.vidas {
+    float: left;
+}
+.cronometro {
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+#telaGameOver {
+    background-image: url("imagens/game_over.png");
+}
+body, html, #menuFimJogo {
+    height: 100%;
+}
+.caixa {
+    height: 200px;
+    width: 50%;
+}
+#menuFimJogo, #menuInicial {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

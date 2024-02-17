@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Generators</title>
+    </head>
+    <body>
+        <div id="teste"></div>
+        <script>
+            function* testeGenerate(){
+                yield console.log('Teste 1')
+                yield console.log('Teste 2')
+                //Yield executa até ela
+                yield console.log('Teste 3')
+
+                return 'Teste 4'
+            }
+            let minhaFuncao = testeGenerate() //Objeto iterator
+            minhaFuncao.next()
+            console.log('------')
+            minhaFuncao.next()
+            console.log('------')
+            minhaFuncao.next()
+            console.log('------')
+            console.log(minhaFuncao.next())
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Import</title>
+    </head>
+    <body>
+        <body>
+            <button id="btnSaudacao">Saudação</button>
+            <hr>
+            <input type="text" id="cep" placeholder="">
+            <button id="btnCEP">Consultar CEP</button>
+        </body>
+        <script type="module">
+          import {saudacao, getEnderecoByCEP } from './import/lib.mjs'
+          console.log(saudacao())
+          getEnderecoByCEP('63800000')
+          .then(dados => console.log(dados))
+        </script>
+    </body>
+</html>

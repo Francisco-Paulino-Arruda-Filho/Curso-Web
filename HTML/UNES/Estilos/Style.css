@@ -1,0 +1,15 @@
+body {
+    background-image: url('../Imagens/fundo2.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+#container {
+    width: 80%;
+
+}
+#menu {
+    float: right;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Métodos estáticos</title>
+    </head>
+    <body>
+        <script>
+          class Funcionario {
+            constructor(departamento, salario, primeiroNome = 'Nome', ultimoNome = 'Sobrenome') {
+                this.departamento = departamento
+                this.salario = salario
+                this._primeiroNome = primeiroNome
+                this.ultimoNome = ultimoNome
+            }
+            static showNome(){
+                return `${this.primeiroNome} ${this.ultimoNome}`
+            }
+          }
+          class Filme {
+            static proximoFilme = 1
+            constructor(titulo) {
+                this.this = titulo
+                this.id = Filme.proximoFilme
+                Filme.proximoFilme += 1
+            }
+            static getProximoFilme() {
+                return this.proximoFilme
+            }
+          }
+          let funcionario = new Funcionario('Programação', 10000, 'Francisco', 'Paulino')
+          //Usado para hierárquia e ver se o objeto possui aquele atributo
+          console.log(Funcionario.showNome())
+          const filme1 = new Filme('Rei Leão')
+          console.log(filme1.id)
+          const filme2 = new Filme('Frozen')
+          console.log(filme2.id)
+        </script>
+    </body>
+</html>

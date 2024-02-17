@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All setted</title>
+    </head>
+    <body>
+        <script>
+           const promise1 = new Promise((resolve, reject) => {
+                return setTimeout(() => resolve('Promise 1 resolvida'), 2000);
+           })
+           const promise2 = new Promise((resolve, reject) => {
+                return setTimeout(() => reject('Promise 2 rejeitada'), 2000);
+           })
+           const promise3 = new Promise((resolve, reject) => {
+                return setTimeout(() => reject('Promise 3 rejeitada'), 2000);
+           })
+           const promesas = [promise1, promise2, promise3]
+           Promise.allSettled(promesas).then((resultados) => {
+                resultados.forEach(resultados => {
+                    if(resultados.status == 'fulfilled') {
+                        console.log(resultados.value)
+                    } else {
+                        console.log(resultados.reason)
+                    }
+                })
+           })
+        </script>
+    </body>
+</html>

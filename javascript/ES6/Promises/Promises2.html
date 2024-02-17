@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promessa 2</title>
+    </head>
+    <body>
+        <script>
+            let resposta
+            //Promisse é assíncrono, os outros blocos são assíncronos
+            let promessa = new Promise((resolve, reject) => {
+                /*try {
+
+                } catch(e) {
+
+                }*/
+                //Requisição HTTP para recuperar informações
+                setTimeout(() =>{
+                    let resposta_de_requesicao = {}
+
+                    if(false) {
+                        resposta_de_requesicao = {
+                            codigo: 1050,
+                            erro: 'Falha de autorização'
+                        }
+                        reject(resposta_de_requesicao)
+                    } else {
+                        resposta_de_requesicao = {
+                            0: {id: 1, nome: 'João'},
+                            1: {id: 2, nome: 'Maria'},
+                            2: {id: 3, nome: 'Pedro'},
+                        }
+                    }
+                    resolve(resposta_de_requesicao)
+                }, 4000)
+            }).then(dados =>{
+                    console.log('Operação sequencial: ', dados)
+                    return 'Parâmetro 1 para then 2'
+                    let promessa2 = new Promise( (resolve, reject) => {
+                        if(true) {
+                        resposta_de_requesicao = {
+                            codigo: 7730,
+                            erro: 'Erro ao recuperar os posts dos usuários'
+                        }
+                        reject(resposta_de_requesicao)
+                        } else {
+                            resposta_de_requesicao = {
+                                0: {id: 1, usuario_id: 1, posts: []},
+                                1: {id: 2, usuario_id: 2, posts: []},
+                                2: {id: 3, usuario_id: 3, posts: []}
+                            }
+                        }
+                    })
+                }).then(param =>{
+                    console.log('Then número 2', param)
+                }).then(() =>{
+                    console.log('Then número 3')
+                }).then(() =>{
+                    console.log('Then número 4')
+                    return 'Parâmetro capturado no then anterior'
+                }).catch(erro => {
+                    console.log('Operação sequencial (Catch): ', erro)
+                    return 'Parâmetro capturado no Then é enviado para o bloco seguinte'
+                }).then(param =>{
+                    console.log('Then número 5', param)
+                }).then(() =>{
+                    console.log('Then número 6')
+                })
+        </script>
+    </body>
+</html>

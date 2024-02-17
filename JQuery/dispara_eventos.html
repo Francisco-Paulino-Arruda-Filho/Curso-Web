@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On off</title>
+    <style>
+        #div1 {
+            width: 80px;
+            height: 80px;
+            border: 1px solid red;
+        }
+        .emDestaque {
+            background-color: blue;
+        }
+    </style>
+    <script>
+        $(document).ready(()=>{
+            $('#btn1').on('click', () => {
+                $('#btn2').trigger('click')//Trigger dispara outro evento
+            })
+            $('#btn2').on('click', () => {
+                alert('Botão 2 clicado')
+            })
+
+            //Faz ambos
+            $('#div1').hover(
+                /*e => $(e.target).addClass('emDestaque'), 
+                e => $(e.target).removeClass('emDestaque')*/
+                e => $(e.target).toggleClass('emDestaque')
+            )
+            
+            /*$('#div1').on('mouseenter', e => {
+                $(e.target).addClass('emDestaque')
+            })
+
+            $('#div1').on('mouseleave', e => {
+                $(e.target).removeClass('emDestaque')
+            })*/
+        })
+    </script>
+</head>
+<body>
+    <button type="button" id="btn1">Enviar</button>
+    <button type="button" id="btn2">Enviar</button>
+    <hr>
+    <div id="div1">
+
+    </div>
+</body>
+</html>

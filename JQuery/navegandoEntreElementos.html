@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <title>Navegando entre elementos HTML</title>
+    </head>
+    <body>
+        <div id="topo">
+            <ul class="menu">
+                <li class="item"></li>
+                <li class="item"></li>
+            </ul>
+        </div>
+
+        <div id="pagina">
+            <div class="secao1">
+                <div class="subSecao"></div>
+            </div>
+        </div>
+
+        <div id="rodape">
+            <div class="secao1">
+                <div class="subSecao"></div>
+            </div>
+        </div>
+    </body>
+    <script>
+        //$('.menu').closest('#topo'), encontra um pai com esse nome(#topo)
+        //$('.menu').parent(), retorna o pai
+        //$('#topo').find('.menu'), encontra filhos com esse nome
+    </script>
+</html>

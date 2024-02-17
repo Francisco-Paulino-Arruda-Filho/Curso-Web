@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promessa 1</title>
+    </head>
+    <body>
+        <script>
+            let resposta
+            let promessa = new Promise((resolve, reject) => {
+                try {
+                    //Pending, pendente essperando o timeout
+                    //throw new Error('Opá ouve um problema')
+                    setTimeout(() => {
+                        resposta = {dados: {msg: 'Recuperamos os dados com sucesso'}}
+                        //Fullfilled: Sucessp na operação
+                        resolve('Sucesso')
+                    }, 3000)
+                } catch(e) {
+                    setTimeout(() => {
+                        //Reject = Falha na operação
+                        reject(e)
+                    }, 3000)
+                }
+            })
+            setTimeout(() => {
+                console.log(resposta)
+                console.log(promessa)
+            }, 3000)
+        </script>
+    </body>
+</html>

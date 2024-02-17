@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Optional Chaining</title>
+    </head>
+    <body>
+        <script>
+            let obj = {
+                2021: {
+                    janeiro:{
+                        pessoal: 2000,
+                        casa: 1500,
+                        investimento: 1000
+                    },
+                    fevereiro:{
+                        pessoal: 1800,
+                        casa: 1500,
+                        investimento: 1000
+                    }
+                }
+            }
+            //console.log(obj['2021'].marco? Potencialmente não existe
+            console.log(obj['2021'].janeiro.pessoal)
+        </script>
+    </body>
+</html>

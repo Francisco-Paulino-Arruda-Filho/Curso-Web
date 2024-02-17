@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <title>Manipulando CSS</title>
+        <style>
+            .campo {
+                background-color: red;
+                margin: 10px;
+            }
+            .topo {
+                background-color: steelblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="topo">
+            <h1>Barra de navegação da aplicação</h1>
+        </div>
+        <div id="formulario">
+            <h3>Contato</h3>
+            <hr>
+
+            <p>Nome:</p>
+            <input type="text">
+            
+
+            <p>Email:</p>
+            <input type="text">
+          
+
+            <p>Mensagem:</p>
+            <textarea></textarea>
+            
+            <button type="button">Enviar</button>
+        </div>
+    </body>
+    <script>
+        //$('.menu').closest('#topo'), encontra um pai com esse nome(#topo)
+        //$('.menu').parent(), retorna o pai
+        //$('#topo').find('.menu'), encontra filhos com esse nome
+    </script>
+</html>
